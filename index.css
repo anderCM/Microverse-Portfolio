@@ -184,24 +184,18 @@ html * {
     font-size: 15px;
     line-height: 24px;
   }
+
   .technologies {
     display: flex;
     justify-content: flex-start;
     gap: 8px;
     align-items: center;
   }
+
   .technologie-label {
     background-color: #ebebff;
     padding: 2px 15px;
     border-radius: 8px;
-  }
-
-  .technologie-label:hover {
-    background-color: #6070ff;
-  }
-
-  .technologie-label:hover p {
-    color: #fff;
   }
 
   .technologie-label p {
@@ -209,6 +203,27 @@ html * {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .global-skills-title p {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .technologie-label:hover {
+    background-color: #6070ff;
+  }
+
+  .global-skills-secondary p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .technologie-label:hover p {
+    color: #fff;
   }
 
   .see-project {
@@ -228,7 +243,7 @@ html * {
     background-color: #6070ff;
     color: #fff;
   }
-  
+
   .about-container {
     background-color: #fff;
     border-top-right-radius: 80px;
@@ -254,7 +269,7 @@ html * {
     margin: 12px auto;
   }
 
-  .global-skills-container ul{
+  .global-skills-container ul {
     list-style-type: none;
     padding: 0;
     margin-bottom: 40px;
@@ -268,19 +283,12 @@ html * {
     align-items: center;
   }
 
-  .global-skills-title p{
-    margin-left: 10px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
   .down-arrow,
   .right-arrow {
     width: 7px;
     height: 7px;
-    border-right: 2px solid #aCb7c3;
-    border-top: 2px solid #aCb7c3;
+    border-right: 2px solid #acb7c3;
+    border-top: 2px solid #acb7c3;
     margin-right: 40px;
   }
 
@@ -300,12 +308,6 @@ html * {
     border-radius: 10px;
   }
 
-  .global-skills-secondary p {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
   .global-skills-secondary img {
     width: 48px;
     height: 48px;
@@ -317,7 +319,7 @@ html * {
   }
 
   .list-closed {
-    border:solid #dfe1e6;
+    border: solid #dfe1e6;
     border-width: 0 0 1px 0;
   }
 }
