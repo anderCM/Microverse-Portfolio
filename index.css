@@ -1,13 +1,5 @@
-:root {
-  --primary-color: #6070ff;
-  --secondary-color: #7F8Cff;
-  --title-color: #172b4d;
-  --text-color: #344563;
-  --label-background-color: #ebebff;
-}
-
 body {
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
 }
 
 html * {
@@ -29,35 +21,22 @@ html * {
     text-align: center;
     width: 100px;
     margin-left: 24px;
-   /* margin-top: 14px; */
   }
 
   #navbar p {
-    color: var(--primary-color);
+    color: #6070ff;
     font-weight: 700;
     font-size: 18px;
     font-style: normal;
-    line-height: 20px;
-/*    width: 76px;
-   height: 20px;  */  
+    line-height: 20px; 
   }
 
   #menu {
-   /* display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   padding: 8px;
-   position: absolute;
-   width: 40px;
-   height: 40px;
-   right: 24px;
-   top: calc(50% - 40px/2); */
     height: 40px;
     width: 40px;
     top: 4px;
     border-radius: 8px;
     padding: 8px;
-
   }
 
   #hamburger-container {
@@ -83,8 +62,8 @@ html * {
     position: absolute;
     width: 16px;
     left: 4px;
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    background-color: #6070ff;
+    border: 2px solid #6070ff;
     border-radius: 8px;
   }
 
@@ -198,7 +177,7 @@ html * {
   }
 
   #headline .headline-title {
-    color: var(--title-color);
+    color: #172b4d;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -209,7 +188,7 @@ html * {
   }
 
   #headline .headline-text {
-    color: var(--text-color);
+    color: #344563;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -229,7 +208,7 @@ html * {
   }
 
   .headline-supporting-text p {
-    color: var(--secondary-color);
+    color: #7f8Cff;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
