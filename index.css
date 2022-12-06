@@ -8,6 +8,7 @@ html * {
 }
 
 @media (min-width: 375px) {
+
   /* NAVBAR */
   #navbar-container {
     display: flex;
@@ -186,15 +187,13 @@ html * {
   }
 
   .technologie-label {
-    display: flex;
-    justify-content: flex-start;
-    gap: 8px;
-    align-items: center;
     list-style-type: none;
     padding: 0;
   }
 
   .technologie-label li {
+    float: right;
+    margin-right: 30px;
     background-color: #ebebff;
     padding: 2px 15px;
     border-radius: 8px;
