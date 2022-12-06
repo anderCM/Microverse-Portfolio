@@ -186,15 +186,17 @@ html * {
   }
 
   .technologie-label {
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
     gap: 8px;
-    align-items: center;
+    align-items: center; */
     list-style-type: none;
     padding: 0;
   }
 
   .technologie-label li {
+    float: left;
+    margin-right: 1rem;
     background-color: #ebebff;
     padding: 2px 15px;
     border-radius: 8px;
