@@ -359,7 +359,7 @@ html * {
   #contact-form textarea {
     width: 100%;
     border-radius: 10px;
-    border-width: 0px;
+    border-width: 0;
     border: none;
     outline: none;
   }
