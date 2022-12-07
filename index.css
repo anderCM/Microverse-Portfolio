@@ -8,7 +8,6 @@ html * {
 }
 
 @media (min-width: 375px) {
-
   /* NAVBAR */
   #navbar-container {
     display: flex;
@@ -319,7 +318,7 @@ html * {
   .form-container {
     width: 375px;
     margin: auto;
-    background:#fff;
+    background: #fff;
   }
 
   .contact-background {
@@ -360,23 +359,24 @@ html * {
   #contact-form textarea {
     width: 100%;
     border-radius: 10px;
-    border-width:0px;
-    border:none;
-    outline:none;
+    border-width: 0px;
+    border: none;
+    outline: none;
   }
+
   #contact-form input {
     height: 35px;
+  }
+
+  #contact-form textarea {
+    resize: none;
   }
 
   #contact-form input:focus,
   #contact-form textarea:focus {
     border: 2px solid #7f8cff;
     outline: none;
-    box-shadow: 0 0 10px #719ECE;
-  }
-
-  #contact-form textarea {
-    resize: none;
+    box-shadow: 0 0 10px #719ece;
   }
 
   #contact-form button {
