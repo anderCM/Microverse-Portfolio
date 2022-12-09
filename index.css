@@ -156,6 +156,14 @@ html * {
     margin: 15px 20px auto 20px;
   }
 
+  .work-container img{
+    transition: transform 100ms;
+  }
+
+  .work-container img:hover{
+    transform: rotate(10deg);
+  }
+
   .work-info-container h1 {
     color: #172b4d;
     font-weight: 700;
