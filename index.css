@@ -8,7 +8,6 @@ html * {
 }
 
 @media (min-width: 375px) {
-
   /* NAVBAR */
   #navbar-container {
     display: flex;
@@ -419,7 +418,6 @@ html * {
 
   .menu-container {
     display: flex;
-    margin-right: 3vw;
     gap: 5vw;
     margin-right: 10vw;
   }
@@ -453,6 +451,11 @@ html * {
   .work-container img,
   .work-container .work-aditional-info {
     width: 100%;
+  }
+
+  .global-skills-secondary li img {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 
   .work-container:first-child img {
@@ -490,11 +493,6 @@ html * {
     justify-content: flex-start;
     padding-right: 3rem;
     padding-bottom: 3.5rem;
-  }
-
-  .global-skills-secondary li img {
-    margin-left: 0;
-    margin-top: 1rem;
   }
 
   /* .global-skills-secondary li p {
