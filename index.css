@@ -348,6 +348,8 @@ html * {
 
   .contact-background {
     background-image: url("./assets/images/form-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #6070ff;
     border-top-left-radius: 80px;
     display: flex;
@@ -525,4 +527,28 @@ html * {
   .section-title {
     width: 50%;
   }
+
+  .contact-background {
+    background-image: url("./assets/images/form-background-desktop.png");
+  }
+
+  .contact-background .contact-text {
+    max-width: 40%;
+    margin: 100px auto 20px auto;
+  }
+
+  #contact-form {
+    margin: 20px auto;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    width: 30vw;
+  }
+
+  #contact-form button {
+    margin: auto;
+    height: 10vh;
+  }
+
 }
