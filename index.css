@@ -156,6 +156,27 @@ html * {
     margin: 15px 20px auto 20px;
   }
 
+  .work-container img {
+    transition: transform 100ms;
+  }
+
+  .global-skills-secondary img {
+    width: 48px;
+    height: 48px;
+    margin-left: 10px;
+    animation: icon-rotation 3s linear infinite;
+  }
+
+  @keyframes icon-rotation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .work-container img:hover {
+    transform: rotate(4deg);
+  }
+
   .work-info-container h1 {
     color: #172b4d;
     font-weight: 700;
@@ -310,12 +331,6 @@ html * {
     border-radius: 10px;
   }
 
-  .global-skills-secondary img {
-    width: 48px;
-    height: 48px;
-    margin-left: 10px;
-  }
-
   .right-arrow {
     transform: rotate(45deg);
   }
@@ -333,6 +348,8 @@ html * {
 
   .contact-background {
     background-image: url("./assets/images/form-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #6070ff;
     border-top-left-radius: 80px;
     display: flex;
@@ -429,7 +446,7 @@ html * {
   }
 
   .headline {
-    margin: auto 15vw;
+    margin: auto 11vw;
   }
 
   #shapes-background {
@@ -450,7 +467,7 @@ html * {
 
   .work-container img,
   .work-container .work-aditional-info {
-    width: 100%;
+    width: 90%;
   }
 
   .global-skills-secondary li img {
@@ -486,6 +503,39 @@ html * {
     gap: 1rem;
   }
 
+  .work-info-container h1 {
+    font-size: 3.5vw;
+    line-height: 52px;
+  }
+
+  .project-description p {
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 24px;
+  }
+
+  .work-description .company {
+    font-size: 1.5vw;
+    line-height: 24px;
+  }
+
+  .work-description .position,
+  .work-description .year {
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 24px;
+  }
+
+  .technologie-label li {
+    font-weight: 400;
+    font-size: 1.4vw;
+    line-height: 24px;
+  }
+
+  .see-project {
+    margin-top: 40px;
+  }
+
   .global-skills-secondary li {
     margin: 20px 0;
     flex-direction: column;
@@ -494,10 +544,6 @@ html * {
     padding-right: 3rem;
     padding-bottom: 3.5rem;
   }
-
-  /* .global-skills-secondary li p {
-    width: ;
-  } */
 
   .headline-supporting-text {
     margin: 1rem 0;
@@ -513,5 +559,36 @@ html * {
 
   .section-title {
     width: 50%;
+  }
+
+  .contact-background {
+    background-image: url("./assets/images/form-background-desktop.png");
+  }
+
+  .contact-background .contact-text {
+    max-width: 40%;
+    margin: 100px auto 20px auto;
+  }
+
+  #contact-form {
+    margin: 20px auto;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    width: 30vw;
+  }
+
+  #contact-form button {
+    margin: auto;
+    height: 48px;
+  }
+
+  .down-arrow {
+    margin: 0;
+  }
+
+  .contact-text p {
+    font-size: 1.4vw;
   }
 }
