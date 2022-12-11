@@ -446,7 +446,7 @@ html * {
   }
 
   .headline {
-    margin: auto 15vw;
+    margin: auto 11vw;
   }
 
   #shapes-background {
@@ -467,7 +467,7 @@ html * {
 
   .work-container img,
   .work-container .work-aditional-info {
-    width: 100%;
+    width: 90%;
   }
 
   .global-skills-secondary li img {
@@ -501,6 +501,38 @@ html * {
   .global-skills-secondary {
     display: flex;
     gap: 1rem;
+  }
+
+  .work-info-container h1 {
+    font-size: 3.5vw;
+    line-height: 52px;
+  }
+
+  .project-description p {
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 24px;
+  }
+
+  .work-description .company {
+    font-size: 1.5vw;
+    line-height: 24px;
+  }
+
+  .work-description .position, .work-description .year {
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 24px;
+  }
+
+  .technologie-label li {
+    font-weight: 400;
+    font-size: 1.4vw;
+    line-height: 24px;
+  }
+
+  .see-project {
+    margin-top: 40px;
   }
 
   .global-skills-secondary li {
@@ -549,5 +581,13 @@ html * {
   #contact-form button {
     margin: auto;
     height: 10vh;
+  }
+
+  .down-arrow {
+    margin: 0;
+  }
+
+  .contact-text p {
+    font-size: 1.4vw;
   }
 }
