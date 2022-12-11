@@ -519,7 +519,8 @@ html * {
     line-height: 24px;
   }
 
-  .work-description .position, .work-description .year {
+  .work-description .position,
+  .work-description .year {
     font-weight: 400;
     font-size: 1.5vw;
     line-height: 24px;
