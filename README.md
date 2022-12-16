@@ -42,7 +42,7 @@
 **My Portfolio** is a project to improve my knowledge
 
 ## Project presentation <a name="project-presentation"></a>
-- [View](https://andercm.github.io/Microverse-Portfolio/)
+- [View](https://www.loom.com/share/9d980050d0ec46e68a5bf598be9d1624)
 
 ## 🛠 Built With <a name="built-with"></a>
 
