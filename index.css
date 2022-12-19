@@ -441,7 +441,7 @@ html * {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    background: red;
+    background: #6070ff;
   }
 
   .full-screen-menu-links {
@@ -453,15 +453,19 @@ html * {
 
   .full-screen-hamburger {
     z-index: 1;
+    color: white;
   }
 
   .full-screen-slice1 {
     display: none;
+    color: white;
+    border: white;
   }
 
   .full-screen-meat {
     /* animation: fs-meat .5s; */
-    
+    background-color: white;
+    border: white;
     transform: translate(0, 5px) rotate(45deg);
     transition: .3s;
   }
