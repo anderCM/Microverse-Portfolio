@@ -442,6 +442,7 @@ html * {
     flex-direction: column;
     gap: 1.5rem;
     background: #6070ff;
+    padding-top: 114px;
   }
 
   .full-screen-menu-links {
