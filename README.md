@@ -16,6 +16,7 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+    - [Project Presentation](#project-presentation)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
@@ -36,9 +37,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [My Portfolio] <a name="about-project"></a>
+# 📖 My Portfolio <a name="about-project"></a>
 
-**[My Portfolio]** is a project to improve my knowledge
+**My Portfolio** is a project to improve my knowledge
+
+## Project presentation <a name="project-presentation"></a>
+- [View](https://www.loom.com/share/9d980050d0ec46e68a5bf598be9d1624)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -80,7 +84,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [View](https://andercm.github.io/Microverse-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
