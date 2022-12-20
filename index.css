@@ -434,7 +434,7 @@ html * {
   }
 
   .full-screen-navbar-container {
-    padding-top: 0!important;
+    padding-top: 0 !important;
     z-index: 1;
   }
 
@@ -468,15 +468,15 @@ html * {
   .full-screen-meat {
     transform: translate(0, 6px) rotate(45deg);
     transition: 0.3s;
-    background: #fff!important;
-    border: 1px solid #fff!important;
+    background: #fff !important;
+    border: 1px solid #fff !important;
   }
 
   .full-screen-slice2 {
     transform: translate(0, 1px) rotate(135deg);
     transition: 0.3s;
-    background-color: #fff!important;
-    border: 1px solid #fff!important;
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
   }
 
   .full-screen-blur {

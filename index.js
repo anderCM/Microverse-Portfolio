@@ -18,7 +18,6 @@ hamburger.addEventListener('click', function ham() {
     links.forEach((link) => {
       link.classList.add('full-screen-menu-links');
       link.addEventListener('click', function clickA() {
-        
         navbar.classList.remove('full-screen-menu');
         hamburger.classList.remove('full-screen-hamburger');
         navbarContainer.classList.remove('full-screen-navbar-container');
