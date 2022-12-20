@@ -468,14 +468,13 @@ html * {
     background-color: white;
     border: white;
     transform: translate(0, 5px) rotate(45deg);
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .full-screen-slice2 {
     /* animation: fs-slice2 .5s; */
-   
     transform: translate(0, -2px) rotate(135deg);
-    transition: .3s;
+    transition: 0.3s;
   }
 }
 
