@@ -200,8 +200,14 @@ worksInfo.map((work) => {
   const seeProject = document.createElement('button');
   seeProject.classList.add('see-project', 'align-item');
   seeProject.textContent = 'See Project';
-
+  seeProject.addEventListener("click", function () {
+    cards();
+  })
   workAditionInfo.append(workInfoCont, workDescrCont, projectDescription, technologies, seeProject);
 
   workSection.append(workContainer);
 });
+
+function cards() {
+  
+}
