@@ -12,11 +12,11 @@ html * {
   #navbar-container {
     display: flex;
     justify-content: space-between;
-    height: 48px;
     width: 100%;
     align-items: center;
     position: fixed;
     background-color: #fff;
+    padding-top: 1rem;
   }
 
   /* HEAD-LINE */
@@ -431,6 +431,56 @@ html * {
     background: #6070ff;
     border-color: #fff;
     color: #fff;
+  }
+
+  .full-screen-navbar-container {
+    padding-top: 0 !important;
+    z-index: 1;
+  }
+
+  .full-screen-menu {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: rgb(96, 112, 255, 0.7);
+    padding-top: 4rem;
+  }
+
+  .full-screen-menu-links {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .full-screen-hamburger {
+    margin-top: 1rem;
+  }
+
+  .full-screen-slice1 {
+    display: none;
+  }
+
+  .full-screen-meat {
+    transform: translate(0, 6px) rotate(45deg);
+    transition: 0.3s;
+    background: #fff !important;
+    border: 1px solid #fff !important;
+  }
+
+  .full-screen-slice2 {
+    transform: translate(0, 1px) rotate(135deg);
+    transition: 0.3s;
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+  }
+
+  .full-screen-blur {
+    filter: blur(0.3rem);
   }
 }
 
