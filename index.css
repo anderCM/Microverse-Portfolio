@@ -494,7 +494,8 @@ html * {
   }
 
   .modal-body {
-    width: 80%;
+    position: relative;
+    width: 90%;
     height: 90%;
     background-color: #fff;
     margin: 3vw auto;
@@ -502,17 +503,12 @@ html * {
     border: 1px solid #ebecf0;
   }
 
-  .modal-body {
-    position: relative;
-    width: 90%;
-  }
-
   .data-modal {
     width: 90vw;
   }
 
   .detail-modal-container,
-  .tech-modal-container  {
+  .tech-modal-container {
     margin: auto 1.2rem;
   }
 
@@ -581,6 +577,10 @@ html * {
     width: 90%;
   }
 
+  .image-modal img {
+    width: 95%;
+  }
+
   .global-skills-secondary li img {
     margin-left: 0;
     margin-top: 1rem;
@@ -646,7 +646,7 @@ html * {
     margin-top: 40px;
   }
 
-  /*modal work section*/
+  /* modal work section */
 
   .data-modal {
     display: flex;
@@ -654,7 +654,7 @@ html * {
   }
 
   .detail-modal-container {
-    width: 60%;
+    width: 70%;
     margin: auto 1.2rem;
   }
 
@@ -717,14 +717,6 @@ html * {
   .image-modal {
     margin: auto;
     text-align: center;
-  }
-
-  .image-modal img {
-    width: 95%;
-  }
-
-  .detail-modal-container {
-    width: 70%;
   }
 
   .label-button-modal-container {
