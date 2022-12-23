@@ -13,14 +13,32 @@ const cards = (object) => {
                       <div class="work-description align-item">
                           <p class="company">${company}</p>
                           <div class="separator"></div>
-                          <p class="position">Back End Dev</p>
+                          <p class="position">href="${position}</p>
                           <div class="separator"></div>
-                          <p class="year">2015</p>
+                          <p class="year">${year}</p>
                       </div>
                       <div>
                         <img class="align-item card-image" src="${image}" alt="${alt}">
                       </div>
-                    </div>`;
+                    
+                    <div class="data-modal">
+                        <p class="detail-modal">${description}</p>
+                        <div class="tech-modal">
+                          <ul class="technologie-label tech-modal">
+                              <li>${labels[0]}</li>
+                              <li>${labels[1]}css</li>
+                              <li>${labels[2]}javascript</li>
+                              <li>${labels[3]}github</li>
+                              <li>${labels[4]}ruby</li>
+                              <li>${labels[5]}Bootstrap</li>
+                          </ul>
+                          <div>
+                            <button class="see-project align-item" href="${live}">See Project</button>
+                            <button class="see-project align-item" href="${source}">See Source</button>
+                          </div>
+                        </div>    
+                      </div>
+                  </div>`;
 
   modalContainer.innerHTML = modalBody;
   /* currentCard.append(modalContainer); */
@@ -90,7 +108,7 @@ const worksInfo = [
     position: 'Back End Dev',
     year: 2015,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    labels: ['html', 'css', 'javascript'],
+    labels: ['html', 'css', 'javascript', 'Github', 'Rubi', 'Bootstrap'],
     image: './assets/images/work-1.png',
     alt: 'Tonic interface',
     live: '#',

@@ -618,6 +618,24 @@ html * {
     margin-top: 40px;
   }
 
+  /*modal work section*/
+
+  .data-modal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .detail-modal {
+    width: 60%;
+    padding: 16px;
+    font-size: 0.6rem;
+  }
+
+  .tech-modal {
+    width: 30%;
+    zoom: 0.7; 
+  }
+
   .global-skills-secondary li {
     margin: 20px 0;
     flex-direction: column;
