@@ -1,10 +1,11 @@
+/* eslint-disable linebreak-style */
 const hamburger = document.querySelector('.humburger-container');
 
-let modalController = false;
 const cards = (object) => {
-  const {id, title, company, position, year, description, labels, image, alt, live, source} = object;
+  const {
+    title, company, position, year, description, labels, image, alt, live, source,
+  } = object;
 
-  const currentCard = document.getElementById(`card-${id}`);
   const modalContainer = document.createElement('div');
   modalContainer.className = 'modal';
 
@@ -13,36 +14,48 @@ const cards = (object) => {
                       <div class="work-description align-item">
                           <p class="company">${company}</p>
                           <div class="separator"></div>
-                          <p class="position">href="${position}</p>
+                          <p class="position">${position}</p>
                           <div class="separator"></div>
                           <p class="year">${year}</p>
                       </div>
-                      <div>
-                        <img class="align-item card-image" src="${image}" alt="${alt}">
+                      <div class='image-modal'>
+                        <img class="align-item card-image" src="${image}" alt="${alt}" />
                       </div>
                     
-                    <div class="data-modal">
-                        <p class="detail-modal">${description}</p>
-                        <div class="tech-modal">
-                          <ul class="technologie-label tech-modal">
-                              <li>${labels[0]}</li>
-                              <li>${labels[1]}css</li>
-                              <li>${labels[2]}javascript</li>
-                              <li>${labels[3]}github</li>
-                              <li>${labels[4]}ruby</li>
-                              <li>${labels[5]}Bootstrap</li>
-                          </ul>
-                          <div>
-                            <button class="see-project align-item" href="${live}">See Project</button>
-                            <button class="see-project align-item" href="${source}">See Source</button>
+                      <div class="data-modal">
+                          <div class="detail-modal-container">
+                            <p>${description.long}</p>
                           </div>
-                        </div>    
+                          <div class="label-button-modal-container">
+                            <div class="tech-modal-container">
+                              <ul class="technologie-label tech-modal">
+                                  <li>${labels.main[0]}</li>
+                                  <li>${labels.main[1]}</li>
+                                  <li>${labels.main[2]}</li>
+                                  <li>${labels.extra[0]}</li>
+                                  <li>${labels.extra[1]}</li>
+                                  <li>${labels.extra[2]}</li>
+                              </ul>
+                            </div>
+                            <div class="modal-buttons">
+                                <button class="see-project align-item" href="${live}">See live</button>
+                                <button class="see-project align-item" href="${source}">See Source</button>
+                            </div>
+                          </div>
                       </div>
-                  </div>`;
+                      <img class="close-modal" src="./assets/icons/x-icon.png" />
+                    </div>`;
 
   modalContainer.innerHTML = modalBody;
+
   /* currentCard.append(modalContainer); */
   document.body.append(modalContainer);
+  /* const img = document.querySelector('.image-modal');
+  img.style.background = `url(${image})`; */
+  const xIcon = document.querySelector('.close-modal');
+  xIcon.addEventListener('click', () => {
+    modalContainer.remove();
+  });
 };
 
 let controller = false;
@@ -107,8 +120,14 @@ const worksInfo = [
     company: 'CANOPY',
     position: 'Back End Dev',
     year: 2015,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    labels: ['html', 'css', 'javascript', 'Github', 'Rubi', 'Bootstrap'],
+    description: {
+      short: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      long: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    },
+    labels: {
+      main: ['html', 'css', 'javascript'],
+      extra: ['github', 'ruby', 'Bootstraps'],
+    },
     image: './assets/images/work-1.png',
     alt: 'Tonic interface',
     live: '#',
@@ -120,8 +139,14 @@ const worksInfo = [
     company: 'CANOPY',
     position: 'Back End Dev',
     year: 2015,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    labels: ['html', 'css', 'javascript'],
+    description: {
+      short: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      long: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    },
+    labels: {
+      main: ['html', 'css', 'javascript'],
+      extra: ['github', 'ruby', 'Bootstraps'],
+    },
     image: './assets/images/work-2.png',
     alt: 'Mult-Post Stories',
     live: '#',
@@ -133,8 +158,14 @@ const worksInfo = [
     company: 'CANOPY',
     position: 'Back End Dev',
     year: 2015,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    labels: ['html', 'css', 'javascript'],
+    description: {
+      short: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      long: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    },
+    labels: {
+      main: ['html', 'css', 'javascript'],
+      extra: ['github', 'ruby', 'Bootstraps'],
+    },
     image: './assets/images/work-3.png',
     alt: 'Tonic interface',
     live: '#',
@@ -146,8 +177,14 @@ const worksInfo = [
     company: 'CANOPY',
     position: 'Back End Dev',
     year: 2015,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    labels: ['html', 'css', 'javascript'],
+    description: {
+      short: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      long: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    },
+    labels: {
+      main: ['html', 'css', 'javascript'],
+      extra: ['github', 'ruby', 'Bootstraps'],
+    },
     image: '../assets/images/work-4.png',
     alt: 'Mult-Post Stories',
     live: '#',
@@ -164,10 +201,10 @@ worksInfo.map((work) => {
   const conpanyWork = work.company;
   const positionWork = work.position;
   const yearWork = work.year;
-  const descriptionWork = work.description;
+  const descriptionWork = work.description.short;
   const imageSrcWork = work.image;
   const altImgWork = work.alt;
-  const techLabels = work.labels;
+  const techLabels = work.labels.main;
 
   const workContainer = document.createElement('div');
   workContainer.className = 'work-container';
