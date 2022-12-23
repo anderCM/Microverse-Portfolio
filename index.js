@@ -1,5 +1,32 @@
 const hamburger = document.querySelector('.humburger-container');
 
+let modalController = false;
+const cards = (object) => {
+  const {id, title, company, position, year, description, labels, image, alt, live, source} = object;
+
+  const currentCard = document.getElementById(`card-${id}`);
+  const modalContainer = document.createElement('div');
+  modalContainer.className = 'modal';
+
+  const modalBody = `<div class="modal-body">
+                      <h2 class="align-item modal-h2">${title}</h2>
+                      <div class="work-description align-item">
+                          <p class="company">${company}</p>
+                          <div class="separator"></div>
+                          <p class="position">Back End Dev</p>
+                          <div class="separator"></div>
+                          <p class="year">2015</p>
+                      </div>
+                      <div>
+                        <img class="align-item card-image" src="${image}" alt="${alt}">
+                      </div>
+                    </div>`;
+
+  modalContainer.innerHTML = modalBody;
+  /* currentCard.append(modalContainer); */
+  document.body.append(modalContainer);
+};
+
 let controller = false;
 hamburger.addEventListener('click', function ham() {
   const navbar = document.querySelector('.menu-container');
@@ -126,7 +153,7 @@ worksInfo.map((work) => {
 
   const workContainer = document.createElement('div');
   workContainer.className = 'work-container';
-  workContainer.id = idWork;
+  workContainer.id = `card-${idWork}`;
 
   /* First workContainer child */
   const imageWork = document.createElement('img');
@@ -200,14 +227,10 @@ worksInfo.map((work) => {
   const seeProject = document.createElement('button');
   seeProject.classList.add('see-project', 'align-item');
   seeProject.textContent = 'See Project';
-  seeProject.addEventListener("click", function () {
-    cards();
-  })
+  seeProject.addEventListener('click', () => {
+    cards(work);
+  });
   workAditionInfo.append(workInfoCont, workDescrCont, projectDescription, technologies, seeProject);
 
   workSection.append(workContainer);
 });
-
-function cards() {
-  
-}

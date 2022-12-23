@@ -482,6 +482,28 @@ html * {
   .full-screen-blur {
     filter: blur(0.3rem);
   }
+
+  .modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .modal-body {
+    width: 80%;
+    height: 90%;
+    background-color: red;
+    margin: 3vw auto;
+    border-radius: 1rem;
+  }
+
+  .modal-h2 {
+    padding-top: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
