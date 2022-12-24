@@ -494,6 +494,9 @@ html * {
     left: 0;
     top: 0;
     right: 0;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .modal-body {
@@ -501,7 +504,7 @@ html * {
     width: 90%;
     height: 90%;
     background-color: #fff;
-    margin: 2vw auto;
+    margin: 3vw auto;
     border-radius: 1rem;
     border: 1px solid #ebecf0;
   }
