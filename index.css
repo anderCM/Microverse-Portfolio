@@ -173,6 +173,10 @@ html * {
     }
   }
 
+  .image-modal img {
+    width: 80vw;
+  }
+
   .work-container img:hover {
     transform: rotate(4deg);
   }
@@ -529,11 +533,6 @@ html * {
     top: 3%;
     right: 7%;
   }
-
-  .image-modal img {
-    width: 80vw;
-  }
-
 }
 
 @media (min-width: 768px) {
