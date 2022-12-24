@@ -552,6 +552,11 @@ html * {
     height: 48px;
     font-size: 15px;
   }
+
+  .error-message {
+    display: none;
+    color: red;
+  }
 }
 
 @media (min-width: 768px) {
