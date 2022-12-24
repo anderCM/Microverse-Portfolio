@@ -293,3 +293,17 @@ worksInfo.map((work) => {
 
   workSection.append(workContainer);
 });
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (e) => {
+  const emailInput = form.querySelector('input[type=email]');
+  const errorMessage = document.querySelector('.error-message');
+
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    e.preventDefault();
+    errorMessage.style.display = 'block';
+    return;
+  }
+  errorMessage.style.display = 'none';
+});
