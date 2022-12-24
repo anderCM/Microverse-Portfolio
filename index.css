@@ -549,7 +549,6 @@ html * {
     height: 48px;
     font-size: 15px;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -596,6 +595,13 @@ html * {
   .work-container img,
   .work-container .work-aditional-info {
     width: 90%;
+  }
+
+  .image-modal img {
+    width: 70vw;
+    object-fit: cover;
+    height: 60vh;
+    margin: 0 0 -0.4rem 0;
   }
 
   .global-skills-secondary li img {
@@ -740,13 +746,6 @@ html * {
     text-align: center;
     width: 96%;
     background-color: #e6e6e2;
-  }
-
-  .image-modal img {
-    width: 70vw;
-    object-fit: cover;
-    height: 60vh;
-    margin: 0 0 -0.4rem 0;
   }
 
   .label-button-modal-container {
