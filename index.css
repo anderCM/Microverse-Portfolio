@@ -173,6 +173,10 @@ html * {
     }
   }
 
+  .image-modal img {
+    width: 80vw;
+  }
+
   .work-container img:hover {
     transform: rotate(4deg);
   }
@@ -188,6 +192,7 @@ html * {
     justify-content: flex-start;
     gap: 15px;
     align-items: center;
+    margin-bottom: 1rem;
   }
 
   .work-description .company {
@@ -482,6 +487,71 @@ html * {
   .full-screen-blur {
     filter: blur(0.3rem);
   }
+
+  .modal {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .modal-body {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    margin: 3vw auto;
+    border-radius: 1rem;
+    border: 1px solid #ebecf0;
+  }
+
+  .data-modal {
+    width: 90vw;
+  }
+
+  .detail-modal-container {
+    width: 80vw;
+  }
+
+  .detail-modal-container,
+  .tech-modal-container {
+    margin: auto;
+  }
+
+  .tech-modal {
+    flex-wrap: wrap;
+    margin: 1rem auto;
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ebecf0;
+  }
+
+  .close-modal {
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 7%;
+  }
+
+  .detail-modal-container p {
+    font-size: 3.2vw;
+    color: #344563;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .modal-button {
+    width: 146px;
+    height: 48px;
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -528,6 +598,13 @@ html * {
   .work-container img,
   .work-container .work-aditional-info {
     width: 90%;
+  }
+
+  .image-modal img {
+    width: 70vw;
+    object-fit: cover;
+    height: 60vh;
+    margin: 0 0 -0.4rem 0;
   }
 
   .global-skills-secondary li img {
@@ -588,12 +665,27 @@ html * {
 
   .technologie-label li {
     font-weight: 400;
-    font-size: 1.4vw;
     line-height: 24px;
   }
 
   .see-project {
     margin-top: 40px;
+  }
+
+  /* modal work section */
+
+  .data-modal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .detail-modal-container {
+    width: 65%;
+    margin: 1rem 1.2rem;
+  }
+
+  .detail-modal-container p {
+    font-size: 1.3vw;
   }
 
   .global-skills-secondary li {
@@ -650,5 +742,21 @@ html * {
 
   .contact-text p {
     font-size: 1.4vw;
+  }
+
+  .image-modal {
+    margin: auto;
+    text-align: center;
+    width: 96%;
+    background-color: #e6e6e2;
+  }
+
+  .label-button-modal-container {
+    width: 25%;
+  }
+
+  .close-modal {
+    top: 2%;
+    right: 4%;
   }
 }
