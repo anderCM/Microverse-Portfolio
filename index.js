@@ -48,13 +48,20 @@ const cards = (object) => {
 
   modalContainer.innerHTML = modalBody;
 
-  /* currentCard.append(modalContainer); */
   document.body.append(modalContainer);
-  /* const img = document.querySelector('.image-modal');
-  img.style.background = `url(${image})`; */
+
+  const sections = document.querySelectorAll('section');
+
+  sections.forEach((section) => {
+    section.style.filter = 'blur(0.3rem)';
+  });
+
   const xIcon = document.querySelector('.close-modal');
   xIcon.addEventListener('click', () => {
     modalContainer.remove();
+    sections.forEach((section) => {
+      section.style.filter = 'none';
+    });
   });
 };
 

@@ -519,7 +519,7 @@ html * {
 
   .modal-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border-top: 1px solid #ebecf0;
   }
 
@@ -529,6 +529,11 @@ html * {
     top: 3%;
     right: 7%;
   }
+
+  .image-modal img {
+    width: 80vw;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -578,7 +583,7 @@ html * {
   }
 
   .image-modal img {
-    width: 95%;
+    width: 30vw;
   }
 
   .global-skills-secondary li img {
