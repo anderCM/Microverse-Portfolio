@@ -26,20 +26,17 @@ const cards = (object) => {
                           <div class="detail-modal-container">
                             <p>${description.long}</p>
                           </div>
-                          <div class="label-button-modal-container">
+                          <div class="label-button-modal-container align-item">
                             <div class="tech-modal-container">
                               <ul class="technologie-label tech-modal">
                                   <li>${labels.main[0]}</li>
                                   <li>${labels.main[1]}</li>
                                   <li>${labels.main[2]}</li>
-                                  <li>${labels.extra[0]}</li>
-                                  <li>${labels.extra[1]}</li>
-                                  <li>${labels.extra[2]}</li>
                               </ul>
                             </div>
                             <div class="modal-buttons">
-                                <button class="see-project align-item" href="${live}">See live</button>
-                                <button class="see-project align-item" href="${source}">See Source</button>
+                                <button class="see-project align-item modal-button" href="${live}">See live</button>
+                                <button class="see-project align-item modal-button" href="${source}">See Source</button>
                             </div>
                           </div>
                       </div>
